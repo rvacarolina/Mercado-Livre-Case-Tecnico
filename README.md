@@ -2,7 +2,7 @@
 
 Neste repositório consta a solução dos três problemas propostos pelo Case Técnico. O nome dos arquivos condiz com o problema, por exemplo: parte1.ipynb é o código referente ao primeiro problema.\
 Também existe o 'xgb_model.pickle', o qual se refere ao modelo criado em parte3.ipynb.\
-Os dados estão na pasta 'Teste Técnico - DS'.\
+Os dados estão na pasta 'Teste Técnico - DS'.
 
 ## Requisitos
 

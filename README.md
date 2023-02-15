@@ -1,8 +1,8 @@
 # Mercado Livre - Case Técnico
 
-Neste repositório consta a solução dos três problemas propostos pelo Case Técnico. O nome dos arquivos condiz com o problema, por exemplo: parte1.ipynb é o código referente ao primeiro problema.
-Também existe o 'xgb_model.pickle', o qual se refere ao modelo criado em parte3.ipynb.
-Os dados estão na pasta 'Teste Técnico - DS'.
+Neste repositório consta a solução dos três problemas propostos pelo Case Técnico. O nome dos arquivos condiz com o problema, por exemplo: parte1.ipynb é o código referente ao primeiro problema.\
+Também existe o 'xgb_model.pickle', o qual se refere ao modelo criado em parte3.ipynb.\
+Os dados estão na pasta 'Teste Técnico - DS'.\
 
 ## Requisitos
 
@@ -16,7 +16,7 @@ pip install -r /path/to/requirements.txt
 
 ## Como executar
 
-Para executar o código, basta abrir um dos códigos e executar em um editor que suporte o formato Jupyter Notebook (.ipynb).
+Para executar o código, basta abrir um dos códigos e executar em um editor que suporte o formato Jupyter Notebook (.ipynb).\
 Caso queira testar o modelo existentes com novos dados, basta executar o código abaixo.
 
 ```python

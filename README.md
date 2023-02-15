@@ -1,10 +1,8 @@
-# Incognia - Payments Chargeback Prediction
+# Mercado Livre - Case Técnico
 
-A base de dados Payments apresenta eventos de transações por meio de diferentes
-variáveis, como valor da transação e a região geográfica em que ela foi realizada.
-Adicionalmente, existe a coluna chargedback que indica se a transação ocasionou um
-chargeback.
-Neste contexto, o objetivo é construir um modelo para predizer corretamente os casos de chargeback através das variáveis disponíveis na base de dados.
+Neste repositório consta a solução dos três problemas propostos pelo Case Técnico. O nome dos arquivos condiz com o problema, por exemplo: parte1.ipynb é o código referente ao primeiro problema.
+Também existe o 'xgb_model.pickle', o qual se refere ao modelo criado em parte3.ipynb.
+Os dados estão na pasta 'Teste Técnico - DS'.
 
 ## Requisitos
 
@@ -16,31 +14,20 @@ pip install -r /path/to/requirements.txt
 
 É necessário que você tenha o Python instalado localmente. Caso não tenha, instale através deste [link](https://www.python.org/).
 
-## Estrutura do diretório
-
-├── images                                    # Imagens geradas pelo código
-├── incognia-cin-data                   # Dados
-├── pickle                                      # Modelos salvos
-├... code.ipynb                                #Código em Jupyter Notebook
-├... code.py                                     #Código em Python
-├... requirements.txt                        #Bibliotecas do Python
-├... Relatório - Carolina Robledo Velini de Andrade.pdf               #Relatório
-
-└... README.md
-
 ## Como executar
 
-Para executar o código completo, basta abrir e executar em um editor de código com Python um arquivo de sua preferência (code.ipynb ou code.py).
-Caso queira testar um dos modelos existentes com novos dados, basta executar o código abaixo.
+Para executar o código, basta abrir um dos códigos e executar em um editor que suporte o formato Jupyter Notebook (.ipynb).
+Caso queira testar o modelo existentes com novos dados, basta executar o código abaixo.
 
 ```python
 import pandas as pd
+import pickle
 
 #Carregando o modelo
 model=pickle.load(open('model.pkl','rb'))
 
-#Exemplo - Lendo novos dados em parquet
-df = pd.read_parquet('test.parquet')
+#Exemplo - Lendo novos dados
+df = pd.read_csv('test.csv')
 predictions=model.predict(df)
 print(predictions)
 
